@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #7FBD42;
+    color: white;
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    display: flex;
+}
+
+header p:first-child {
+    position: relative;
+    width: 80%;
+}
+
+header p:last-child {
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header p:last-child a {
+    color: black;
+    cursor: pointer;
+    border: 0px solid #000;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: .3em;
+    transition: background-color .3s;
+}
+
+header p:last-child a:hover {
+    background-color: white;
+}
+
+.hidden-welcome {
+    display: none;
+}
+
+.welcome {
+    position: relative;
+    width: 100%;
+    top: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.select {
+    background-color: #74BB58;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    height: 25vh;
+    width: 35%;
+    transition: background-color .3s, color .3s;
+}
+
+.select:first-child:hover {
+    background-color: #3E863D;
+    color: white;
+}
+
+.box {
+    border: 0px;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    height: 100%;
+    transition: background-color .3s, color .3s;
+}
+
+.open-label {
+    border: 0px;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0% 0% 0% 0%!important;
+    padding: 6% 0% 6% 0%;
+    position: relative;
+    /*height: 50%;*/
+    width: 100%;
+}
+
+.box:hover,
+.open-label:hover {
+    background-color: #333333;
+    color: white;
+}
+
+.select p {
+    margin: 13% 0% 0% 0%;
+}
+
+.hidden-create {
+    display: none;
+}
+
+.visible-create {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.visible-create input[type="text"] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    font-size: 1.5em;
+    text-indent: .5em;
+    padding: 1% 0% 1% 0%;
+    margin: 2% 0% 0% 0%;
+}
+
+.visible-create input[type="text"]:focus {
+    background-color: #F3E061;
+}
+
+.visible-create textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 500px;
+    margin: 2% 0% 0% 0%;
+    text-indent: .5em;
+    line-height: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin: 2% 0% 2% 0%;
+    justify-content: space-around;
+}
+
+.visible-create input[type="button"] {
+    border: 0px solid #000;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    width: 45%;
+    /*left: 35%;*/
+    background-color: #F3E061;
+    margin: 2% 0% 2% 0%;
+    padding: 1% 0% 1% 0%;
+    font-size: 1.5em;
+}
+
+.visible-create input[type="button"]:hover {
+    background-color: #82BB23;
+    color: white;
+}
+
+input[type="file"] {
+    position: fixed;
+    top: -2000px;
+}
+
+#file {
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    background: #DDD;
+    display: inline-block;
+}
+
+.disabled {
+    background-color: lightgrey!important;
+}
+
+.hidden-download {
+    display: none;
+}
+
+.download {
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 30%;
+    width: 40%;
+    left: 30%;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.filename {
+    color: #539E43;
+    font-size: 1.5em;
+}
+
+figure {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.recovery-password {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.recovery-password:hover {
+    color: red;
+}
+
+.closeSign {
+    cursor: pointer;
+    padding: .5em;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: right;
+    transition: color .3s;
+}
+
+.closeSign:hover {
+    color: red;
+}
+
+.hidden-sign {
+    display: none;
+}
+
+.signIn,
+.signUp {
+    z-index: 10;
+    position: fixed;
+    display: block;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    background-color: white;
+    border: 0px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.signUp {
+    top: 15%!important;
+}
+
+.signUp input[name="up"] {
+    margin: 0em 0em 1.5em 0em;
+}
+
+.signUp input[type="submit"] {
+    background-color: #7FBD42;
+    border: 0px solid #000;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    width: 60%;
+    padding: .5em 0em .5em 0em;
+    transition: background-color .3s;
+}
+
+.signUp input[type="submit"]:hover {
+    background-color: #3E863D;
+}
+
+.signIn input[type="submit"] {
+    background-color: #7FBD42;
+    border: 0px solid #000;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    width: 60%;
+    padding: .5em 0em .5em 0em;
+    transition: background-color .3s;
+}
+
+.signIn input[type="submit"]:hover {
+    background-color: #3E863D;
+}
+
+.hidden-warning {
+    display: none;
+}
+
+.warning {
+    z-index: 10;
+    display: block;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    background-color: white;
+    color: red;
+    border: 0px solid #000;
+    border: 5px;
+    font-weight: bold;
+    font-size: 2em;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,403 @@
+/* COMMON BEGIN */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-color: #7FBD42;
+    color: white;
+    padding: 1% 0% 1% 0%;
+    /*text-align: center;*/
+    display: flex;
+}
+
+.header h1 {
+    text-indent: 3em;
+    position: relative;
+    width: 80%;
+}
+
+.header form {
+    position: relative;
+    width: 20%;
+}
+
+.header form input {
+    background-color: white;
+    border: 0px solid #000;
+    border-radius: 3px;
+    margin: 7% 0% 0% 0%;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    padding: 3% 0% 3% 0%;
+    font-size: 14pt;
+    transition: background-color .3s, color .3s;
+}
+
+.header form input:hover {
+    background-color: #333333;
+    color: white;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative-footer {
+    position: relative;
+}
+
+
+/* COMMON END */
+
+
+/* CONTENT BEGIN */
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.folder {
+    margin: 0;
+}
+
+.tree {
+    background-color: lightgreen;
+    position: relative;
+    width: 20%;
+    /*height: unset;*/
+}
+
+.flex-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {
+    font-size: 1em;
+    list-style-type: none;
+    list-style-image: url(/images/doc_1.png);
+    cursor: pointer;
+}
+
+.list-ctrl {
+    padding: 0px;
+}
+
+.list-ctrl li {
+    /*display: flex;*/
+    list-style-type: none;
+}
+
+.list-ctrl li img {
+    position: relative;
+    width: 24px;
+    margin: 0px 10px;
+}
+
+.new {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.active {
+    background-color: mediumseagreen;
+}
+
+.hidden-sandbox {
+    display: none;
+}
+
+.sandbox {
+    position: relative;
+    width: 80%;
+}
+
+.new-file {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hidden-create {
+    display: none;
+}
+
+.visible-create {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.visible-create input[type="text"] {
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    font-size: 1.5em;
+    text-indent: .5em;
+    padding: 1% 0% 1% 0%;
+    margin: 2% 0% 0% 0%;
+}
+
+.panel-edit-name {
+    display: none;
+}
+
+.panel-edit-content {
+    border: 1px solid #00f;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 500px;
+    margin: 2% 0% 0% 0%;
+    text-indent: .5em;
+    line-height: 1.5em;
+}
+
+.visible-create input[type="text"]:focus {
+    background-color: #F3E061;
+}
+
+.visible-create textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 500px;
+    margin: 2% 0% 0% 0%;
+    text-indent: .5em;
+    line-height: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin: 2% 0% 2% 0%;
+    justify-content: space-around;
+}
+
+.visible-create input[type="button"] {
+    border: 0px solid #000;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    width: 45%;
+    /*left: 35%;*/
+    background-color: #F3E061;
+    margin: 2% 0% 2% 0%;
+    padding: 1% 0% 1% 0%;
+    font-size: 1.5em;
+}
+
+.visible-create input[type="button"]:hover {
+    background-color: #82BB23;
+    color: white;
+}
+
+input[type="file"] {
+    position: fixed;
+    top: -2000px;
+}
+
+#file {
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    background: #DDD;
+    display: inline-block;
+}
+
+.disabled {
+    background-color: lightgrey!important;
+}
+
+.hidden-download {
+    display: none;
+}
+
+.download {
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 30%;
+    width: 40%;
+    left: 30%;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.filename {
+    color: #539E43;
+    font-size: 1.5em;
+}
+
+figure {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+
+/*notification begin*/
+
+.hidden-notification {
+    display: none!important;
+}
+
+.notification {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 30px black;
+}
+
+.close-notification {
+    color: black;
+    cursor: pointer;
+    text-align: right;
+    position: relative;
+    margin: 15px;
+    padding: 0px;
+    transition: color .3s;
+}
+
+.close-notification:hover {
+    color: red;
+}
+
+.message {
+    position: relative;
+    margin: 15px;
+}
+
+.save-change {
+    background-color: mediumseagreen!important;
+}
+
+.hidden-create-user-form,
+.hidden-remove-file,
+.hidden-edit-name {
+    display: none!important;
+}
+
+.create-user-form,
+.remove-file,
+.edit-name {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 55px 5px #000;
+}
+
+.close-create,
+.close-edit,
+.close-remove {
+    text-align: right;
+    text-indent: 1em;
+    margin: 0;
+}
+
+.close-create span,
+.close-edit span,
+.close-remove span {
+    color: red;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.example-create,
+.desc,
+.desc {
+    text-align: center;
+}
+
+.example-create,
+.create-user-form input[name="new-file-name"],
+.create-user-form input[name="create-new-user-file"],
+.edit-name input[name="new-name"],
+.edit-name input[name="rename-btn"],
+.remove-file input[name="remove-btn"] {
+    margin: 10px 0px;
+}
+
+.create-user-form input[name="new-file-name"],
+.edit-name input[name="new-name"] {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-indent: 1em;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: box-shadow .3s;
+}
+
+.create-user-form input[name="new-file-name"]:focus,
+.edit-name input[name="new-name"]:focus {
+    box-shadow: inset 0px 0px 3px #333333;
+}
+
+.create-user-form input[name="create-new-user-file"],
+.edit-name input[name="rename-btn"],
+.remove-file input[name="remove-btn"] {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 3px 0px;
+    background-color: limegreen;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color .3s;
+}
+
+.create-user-form input[name="create-new-user-file"]:hover,
+.edit-name input[name="rename-btn"]:hover,
+.remove-file input[name="remove-btn"]:hover {
+    background-color: #000;
+}
+
+
+/* CONTENT END */

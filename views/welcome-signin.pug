@@ -1,0 +1,14 @@
+section(id="signIn", class="hidden-sign")
+    div
+        p(class="closeSign", data-sign="in") &times;
+        form(method="POST", action="/signIn")
+            label(for="email") Enter email : 
+            input(type="text", name="email", id="in_email", placeholder="Email...")
+            br
+            br
+            label(for="pass") Enter password : 
+            input(type="password", name="pass", id="in_pass", placeholder="Password...")
+            br
+            br
+            input(type="submit", id="in", name="in", value="Sign In")
+        //- p(class="recovery-password") Forgot Password?

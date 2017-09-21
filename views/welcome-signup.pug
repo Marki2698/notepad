@@ -1,0 +1,34 @@
+section(id="signUp", class="hidden-sign")
+    div
+        p(class="closeSign", data-sign="up") &times;
+        form(method="POST", action="/signUp")
+            label(for="name") 
+                |Enter your name : 
+            input(type="text", name="name", id="name", placeholder="Name...", required)
+            br
+            br
+            label(for="surname") Enter your surname : 
+            input(type="text", name="surname", id="surname", placeholder="Surname...", required)
+            br
+            br
+            label(for="email") Enter email : 
+            input(type="text", name="up_email", id="up_email", placeholder="Email...", required)
+            br
+            br
+            label(for="pass") Enter password : 
+            input(type="password", name="up_pass", id="up_pass", placeholder="Password...", required)
+            br
+            br
+            label(for="pass") Repeat password : 
+            input(type="password", name="repeat_pass", id="repeat_pass", placeholder="Password...", required)
+            br
+            br
+            label(for="secret_word") Enter secret word : 
+            input(type="text", name="secret_word", id="secret_word", placeholder="Secret word...", required)
+            br
+            br
+            input(type="submit", id="up", name="up", value="Sign Up")
+
+section(id="Warning", class="hidden-warning")
+    div
+        p All fields are required!

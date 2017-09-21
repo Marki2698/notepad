@@ -1,0 +1,28 @@
+html
+    head
+        title!= title
+        meta(charset="utf-8")
+        link(rel="stylesheet", type="text/css", href="/css/panel.css")
+        script(type="text/javascript", src="/js/jquery.js")
+    body
+        div(class="header")
+            h1(class="hello")!= name
+            form(action="/logout", method="POST")
+                input(type="submit", name="logout", value="Log out")
+        div(class="content")
+            div(class="tree")
+                p(class="folder")!= folder
+                p(class="new")
+                    span(class="new-file")
+                        img(src="/images/doc-add.png", alt="new file")
+                div(class="flex-list")
+                    ul(class="list")
+                    ul(class="list-ctrl")
+            div(id="editFile", class="hidden-sandbox")
+                include edit-file
+        include notification
+        include create
+        include edit-name
+        include remove-file
+        include welcome-footer
+        script(type="text/javascript", src="/js/panel.js")

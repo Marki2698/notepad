@@ -1,0 +1,19 @@
+{
+  "name": "texteditor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marki",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongoose": "^4.9.7",
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.1"
+  }
+}
